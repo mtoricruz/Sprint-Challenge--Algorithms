@@ -96,9 +96,14 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+        # Using bubblesort to go through items
+        # Loop through list
         for i in range(len(self._list)):
+            # have a nested loop positioned behind initial loop
             for j in range(len(self._list) - i - 1):
+                # if index value of [j] is > index value to the right of j index
                 if self._list[j] > self._list[j + 1]:
+                    # swap positions!
                     self._list[j], self._list[j + 1] = self._list[j + 1], self._list[j]
 
 
